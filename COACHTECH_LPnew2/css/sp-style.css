@@ -1,0 +1,381 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 768px) {
+  /* 共通スタイル */
+
+  h2 {
+    font-size: 2.5rem;
+  }
+  .container {
+    width: 95%;
+  }
+  .br--sp {
+    display: block;
+  }
+  .br--pc {
+    display: none;
+  }
+  .about__items,
+  .about__img,
+  .reason-second__content,
+  .reason__third-img,
+  .reason-third__content,
+  .review__child,
+  .reason__portfolio {
+    width: 90%;
+    margin: 0 auto 40px;
+  }
+
+  /* ---------firstview---------- */
+
+  .firstview {
+    background: url(../img/firstview_bg-sp.png) no-repeat;
+    background-size: cover;
+    min-height: 250px;
+    margin-bottom: 150px;
+    background-position: 100% 100%;
+    z-index: 90;
+  }
+  .firstview__eyecatch {
+    width: 100%;
+    margin-top: 70px;
+  }
+  .firstview__items {
+    width: 100%;
+    z-index: 10;
+    margin-top: -120px;
+    background: rgba(255, 255, 255, 0.9);
+  }
+  .firstview__catchcopy {
+    width: 95%;
+  }
+  .flex__item--row-rvs {
+    flex-direction: row;
+  }
+
+  .first-view__logo {
+    display: none;
+  }
+
+  .about__ttl {
+    font-size: 2.2rem;
+  }
+
+  /* ----------reason-------------- */
+
+  .tab__item {
+    padding: 15px;
+  }
+
+  .reason__ttl {
+    font-size: 2.2rem;
+  }
+  .reason__ttl--no {
+    font-size: 3.8rem;
+  }
+
+  .curriculum {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .curriculum__img--fst {
+    margin-right: 0;
+  }
+
+  .reason-second__content-img {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .cta__btn.fixed_cta {
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    display: block;
+    background: linear-gradient(to bottom, #f45835 0%, #fcc052 100%);
+    color: #fff;
+    position: fixed;
+    z-index: 999;
+    cursor: pointer;
+    display: block;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+  footer {
+    margin-bottom: 61px;
+  }
+
+  .four__child-ttl {
+    font-size: 2rem;
+  }
+
+  /* ここはハンバーガーメニュー */
+
+  .top-header {
+    z-index: 100;
+  }
+
+  .top-header__nav {
+    display: none;
+  }
+
+  .hamburger {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 100;
+    top: 15px;
+    right: 20px;
+    transition: 0.4s;
+    display: block;
+  }
+
+  .hamburger__item {
+    display: block;
+    width: 35px;
+    height: 2px;
+    background-color: #000;
+    transition: 0.8s;
+  }
+
+  .hamburger__item--first {
+    position: absolute;
+    top: 10px;
+    left: 2px;
+  }
+
+  .hamburger__item--second {
+    position: absolute;
+    top: 20px;
+    left: 2px;
+  }
+
+  .hamburger__item--third {
+    position: absolute;
+    top: 30px;
+    left: 2px;
+  }
+
+  .hamburger.active .hamburger__item--first {
+    top: 20px;
+    transform: rotate(45deg);
+  }
+
+  .hamburger.active .hamburger__item--second {
+    opacity: 0;
+  }
+
+  .hamburger.active .hamburger__item--third {
+    top: 20px;
+    transform: rotate(-45deg);
+  }
+
+  /* スマホナビのデザイン */
+
+  .top-header__nav--sp {
+    width: 100%;
+    text-align: center;
+    transition: 0.2s;
+    position: fixed;
+    top: calc(-100% + 70px);
+    left: 0;
+    background: #fff;
+    color: #333333;
+    box-shadow: 0 3px 12px #333333;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    z-index: 110;
+    display: block;
+  }
+
+  .top-header__nav-link--sp {
+    color: #333333;
+    padding: 30px 0;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    font-size: 1.8rem;
+  }
+  .top-header__nav-child--sp {
+    width: 100%;
+    text-align: left;
+  }
+
+  .top-header__nav--sp.open {
+    top: 0;
+    padding-top: 70px;
+    z-index: 99;
+  }
+
+  .top-header__logo-img {
+    width: 130px;
+    padding: 23.5px 0;
+  }
+  .header__cta.header__cta--sp {
+    display: block;
+    margin: 15.5px auto;
+  }
+
+  .section-cta__btn.header__cta,
+  .firstview__img {
+    display: none;
+  }
+
+  .firstview__txt {
+    bottom: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    width: 90%;
+  }
+
+  .firstview__txt--subttl {
+    margin-bottom: 50px;
+    font-size: 1.6rem;
+  }
+
+  .firstview__txt--ttl {
+    font-size: 2.8rem;
+  }
+
+  .firstview__txt--ttl .txt-size {
+    font-size: 4.2rem;
+  }
+  .section-cta__btn {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .reason__third-subttl-txt {
+    display: none;
+  }
+
+  .reason__first-inner {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .reason__sub-child.flex__item {
+    display: block;
+  }
+  .reason__sub-child .curriculum.flex__item {
+    flex-wrap: wrap;
+  }
+
+  .curriculum__img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .reason__third-ttl-txt {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+
+  .reason__third-content {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .second__content-child {
+    width: 40%;
+    margin-bottom: 40px;
+  }
+  .reason__third-child-ttl {
+    margin: 0 auto;
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  .four__child-left,
+  .four__child-right,
+  .service__child,
+  .table__cell {
+    width: 100%;
+  }
+
+  .reason__sub {
+    text-align: center;
+  }
+
+  .reason__sub-txt {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .reason__second-child-ttl {
+    font-size: 2.2rem;
+  }
+
+  .four__child-right .four__child-img {
+    height: 170px;
+  }
+  .course__txt-content,
+  .course__img {
+    width: 100%;
+  }
+
+  .course__txt {
+    margin-bottom: 25px;
+  }
+
+  .course__ttl {
+    text-align: center;
+  }
+  .price__parent {
+    width: 95%;
+  }
+
+  .price__content {
+    margin-bottom: 40px;
+  }
+
+  .price__width {
+    width: 90%;
+  }
+
+  /* contact */
+  .form__table th,
+  .form__table td {
+    width: 100%;
+    display: block;
+    padding: 5px 0;
+  }
+
+  .required {
+    transform: translate(0);
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+    position: static;
+    margin-left: 30px;
+  }
+
+  .contact input,
+  .contact textarea {
+    padding: 7px;
+  }
+
+  .select__box:after {
+    right: 13px;
+  }
+  .post__content,
+  .relation__child {
+    width: 100%;
+  }
+  .relation__child {
+    margin-bottom: 40px;
+  }
+  .single__container,
+  .sidebar {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
